@@ -1,6 +1,7 @@
 # archipelago
 
-Cloudflare Workers provides a serverless execution environment that allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
+Cloudflare Workers provides a serverless execution environment that allows you to create entirely new applications
+or augment existing ones without configuring or maintaining infrastructure.
 
 ## Requirements
 
@@ -16,7 +17,7 @@ Cloudflare Workers provides a serverless execution environment that allows you t
 
 > verify installation: `lerna -v`
 
-- [sign up at cloudfare workers](https://dash.cloudflare.com/sign-up/workers)
+- [Sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers)
 
 ## Getting started
 
@@ -40,13 +41,22 @@ Cloudflare Workers provides a serverless execution environment that allows you t
 
 [Tutorials](https://developers.cloudflare.com/workers/tutorials)
 
-the starter point of the worker is **index.js** if you want to code on another language: [supported languages](https://developers.cloudflare.com/workers/platform/languages)
+The starter point of the worker is **index.js** if you want to code on another
+language: [supported languages](https://developers.cloudflare.com/workers/platform/languages)
+
+For this project was are using JavaScript only since we are managing the project with Lerna.
 
 ## Deployment
 
-we use lerna locally and publish all workers at once, so you need to update your package.json with entries for "build" and "publish" but these entries are not needed for testing a single worker. We use a GitHub action to deploy on merge to main branch but each worker deployment is separate. So you will also need to update the workflow **wrangler.yml** and add another entry for your worker, take the example of john/package.json.
+We use Lerna locally and publish all workers at once, so you need to update your `package.json` with entries for "build"
+and "publish", but these entries are not needed for testing a single worker. 
 
-and for **.github/workflows/wrangler.yml**
+We use a GitHub Action to deploy on merge to main branch but each worker deployment is separate. 
+
+So you will also need to update the workflow **wrangler.yml** and add another entry for your worker, take the example
+of `john/package.json`.
+
+Example **.github/workflows/wrangler.yml**
 
 ```yml
 my-worker:
@@ -61,4 +71,32 @@ my-worker:
         workingDirectory: "packages/my-worker"
 ```
 
-using this example you can change all strings 'my-worker' for your worker name ( you need to add it at **jobs:** scope)
+Using this example you can change all strings 'my-worker' for your worker name (you need to add it at **jobs:** scope).
+
+## Pseudo Websites with Workers Free 🍬 💃 🕺 😎 
+
+- [Deliver an HTML page from an HTML string directly inside the Worker script](https://developers.cloudflare.com/workers/examples/return-html)
+- [The Open Graph protocol](https://ogp.me/)
+- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)  
+- [How structured data works](https://developers.google.com/search/docs/guides/intro-structured-data)
+- [HTML 5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [<script>: The Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+- [<style>: The Style Information element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)  
+- [Base64 image encoding](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)
+- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- [Preview and Generate Open Graph Meta Tags](https://www.opengraph.xyz/)
+- [Structured Data Testing Tool - Google](https://search.google.com/structured-data/testing-tool)
+- [The W3C Markup Validation Service](https://validator.w3.org/)
+- [GTmetrix | Website Speed and Performance Optimization](https://gtmetrix.com/)
+- [PageSpeed Insights - Google Developers](https://developers.google.com/speed/pagespeed/insights/)
+- [YouTube](https://www.youtube.com/)
+- [Emoji cheat sheet](https://github.com/WebpageFX/emoji-cheat-sheet.com)
+- [Typer.js](https://steven.codes/typerjs/)
+- [EditorConfig](https://editorconfig.org/)
+- [Convert your images to base64](https://www.base64-image.de/)
+- [GIF to base64 converter](https://onlineimagetools.com/convert-gif-to-base64)
+- [Content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network)
+
+## Islands
+
+- [John](https://john.roquesbeach.workers.dev/)
