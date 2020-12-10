@@ -51,11 +51,21 @@ For this project was are using JavaScript only since we are managing the project
 ## Deployment
 
 We use Lerna locally and publish all workers at once, so you need to update your `package.json` with entries for "build"
-and "publish", but these entries are not needed for testing a single worker. 
+and "publish", but these entries are not needed for publishing a single worker. 
+
+From the repository root run
 
 ```
 lerna run publish
 ```
+
+To deploy a single Worker `cd` to its directory and run
+
+```
+wrangler publish
+```
+
+![wrangler publish](images/wrangler-publish.png)
 
 We use a GitHub Action to deploy on merge to main branch but each worker deployment is separate. 
 
@@ -112,6 +122,7 @@ Using this example you can change all strings 'my-worker' for your worker name (
 - [PageSpeed Insights - Google Developers](https://developers.google.com/speed/pagespeed/insights/)
 - [YouTube](https://www.youtube.com/)
 - [Emoji cheat sheet](https://github.com/WebpageFX/emoji-cheat-sheet.com)
+- [Emojipedia](https://emojipedia.org)
 - [Typer.js](https://steven.codes/typerjs/)
 - [EditorConfig](https://editorconfig.org/)
 - [Convert your images to base64](https://www.base64-image.de/)
