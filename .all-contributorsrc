@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jbampton",
+      "name": "John Bampton",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/418747?v=4",
+      "profile": "https://github.com/jbampton",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "archipelago",
+  "projectOwner": "RoquesBeach",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
