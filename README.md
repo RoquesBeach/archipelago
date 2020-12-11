@@ -115,6 +115,8 @@ Using this example you can change all strings `my-worker` for your Worker name (
 - [Deliver an HTML page from an HTML string directly inside the Worker script](https://developers.cloudflare.com/workers/examples/return-html)
 - [JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat](https://developer.mozilla.org/en-US/docs/Web/javascript)
 - [Git hooks made easy 🐶 woof!](https://typicode.github.io/husky/#/)
+- [Jekyll - Transform your plain text into static websites and blogs](https://jekyllrb.com/)
+- [GitHub Pages - Websites for you and your projects](https://pages.github.com/)
 - [ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code. It was created by Nicholas C. Zakas in 2013. Rules in ESLint are configurable, and customized rules can be defined and loaded. ESLint covers both code quality and coding style issues](https://eslint.org/)
 - [V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others](https://v8.dev/)
 - [npm is a package manager for the JavaScript programming language. npm, Inc. is a subsidiary of GitHub, an American multinational corporation that provides hosting for software development and version control with the usage of Git. It is the default package manager for the JavaScript runtime environment Node.js](https://www.npmjs.com/)
@@ -140,7 +142,7 @@ Using this example you can change all strings `my-worker` for your Worker name (
 - [Rich Results Test](https://search.google.com/test/rich-results)
 - [Structured Data Testing Tool - Google](https://search.google.com/structured-data/testing-tool)
 - [The W3C Markup Validation Service](https://validator.w3.org/)
-- [GTmetrix | Website Speed and Performance Optimization](https://gtmetrix.com/)
+- [GTmetrix - Website Speed and Performance Optimization](https://gtmetrix.com/)
 - [PageSpeed Insights - Google Developers](https://developers.google.com/speed/pagespeed/insights/)
 - [YouTube](https://www.youtube.com/)
 - [Emoji cheat sheet](https://github.com/WebpageFX/emoji-cheat-sheet.com)
@@ -151,8 +153,8 @@ Using this example you can change all strings `my-worker` for your Worker name (
 - [Convert your images to base64](https://www.base64-image.de/)
 - [GIF to base64 converter](https://onlineimagetools.com/convert-gif-to-base64)
 - [Content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network)
-- [GitHub Desktop | Simple collaboration from your desktop](https://desktop.github.com/)
-- [Free Git GUI for Windows, Mac, Linux | GitKraken](https://www.gitkraken.com/)
+- [GitHub Desktop - Simple collaboration from your desktop](https://desktop.github.com/)
+- [Free Git GUI for Windows, Mac, Linux - GitKraken](https://www.gitkraken.com/)
 - [Git GUI Clients](https://git-scm.com/downloads/guis)
 - [gitk - The Git repository browser](https://git-scm.com/docs/gitk)
 - [git-gui - A portable graphical interface to Git](https://git-scm.com/docs/git-gui)
@@ -180,6 +182,10 @@ Using this example you can change all strings `my-worker` for your Worker name (
 
 ![Running Workers in Lynx Browser](images/lynx-browser-workers.png)
 
-## Islands 🦭 🦑 🦈 🐙 🐡 🐠 🐟 ♓ ⛵ 🏊 🏖️
+## Caribbean Sea 🦭 🦑 🦈 🐙
+
+[archipelago](https://roquesbeach.github.io/archipelago/)
+
+## Islands 🐡 🐠 🐟 ♓ ⛵ 🏊 🏖️
 
 - [John](https://john.roquesbeach.workers.dev/)
