@@ -1,1 +1,34 @@
-theme: jekyll-theme-cayman
+---
+title: Los Roques archipelago is a federal dependency of Venezuela consisting of approximately 350 islands, cays, and
+  islets in a total area of 40.61 square kilometers.
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  The islands' pristine coral reef attracts many wealthy visitors, especially from Europe, some of whom come in their
+  own yachts and anchor in the inner, protected shallow waters. Development and tourism are controlled.
+  Because of the wide variety of seabirds and rich aquatic life, the Venezuelan government declared Los Roques a
+  National Park in 1972.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://roquesbeach.github.io/archipelago/
+repository: https://github.com/roquesbeach/archipelago
+github_username: roquesbeach
+# paginate: 20
+feed:
+  path: feed.xml
+logo: "/images/roques_1280_x_640.jpg"
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+theme: minima
+future: true
+strict_front_matter: true
+plugins:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+exclude:
+  - .gitignore
