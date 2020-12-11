@@ -14,6 +14,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "Andrew-Colman",
+      "name": "Andrew ",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/56676505?v=4",
+      "profile": "http://spectralapps.com.br",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
