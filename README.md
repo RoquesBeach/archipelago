@@ -1,6 +1,6 @@
 # archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [Cloudflare Workers](https://workers.cloudflare.com/) provides a serverless execution environment that allows you to
@@ -205,6 +205,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/jbampton"><img src="https://avatars3.githubusercontent.com/u/418747?v=4" width="100px;" alt=""/><br /><sub><b>John Bampton</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Code">💻</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Documentation">📖</a></td>
     <td align="center"><a href="http://spectralapps.com.br"><img src="https://avatars1.githubusercontent.com/u/56676505?v=4" width="100px;" alt=""/><br /><sub><b>Andrew </b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=Andrew-Colman" title="Documentation">📖</a></td>
     <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=all-contributors" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/summerhill5"><img src="https://avatars2.githubusercontent.com/u/42298149?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Araica</b></sub></a><br /><a href="#design-summerhill5" title="Design">🎨</a></td>
   </tr>
 </table>
 
