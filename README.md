@@ -1,11 +1,11 @@
 # archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙 
 
-Cloudflare Workers provides a serverless execution environment that allows you to create entirely new applications
-or augment existing ones without configuring or maintaining infrastructure.
+[Cloudflare Workers](https://workers.cloudflare.com/) provides a serverless execution environment that allows you to
+create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
 
 ## Requirements
 
-- [Nodejs](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 
 > verify installation: `node -v`
 
@@ -17,7 +17,13 @@ or augment existing ones without configuring or maintaining infrastructure.
 
 > verify installation: `lerna -v`
 
-- [Sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers)
+## First Steps
+
+You can [sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers) with your own account for
+free and experiment with the sample code in the
+[Playground](https://developers.cloudflare.com/workers/learning/playground). Using the admin side of your Cloudflare
+Workers account will be the easiest way to deploy Workers without using the
+[Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler).
 
 ## Getting started
 
@@ -33,7 +39,8 @@ wrangler generate my-worker
 cd my-worker
 ```
 
-Since we are building all the Workers under one account and subdomain you must fill out your [wrangler.toml](packages/john/wrangler.toml) with
+Since we are building all the Workers under one account and subdomain `roquesbeach.workers.dev` you must fill out your
+[wrangler.toml](packages/john/wrangler.toml) with
 
 ```toml
 account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
@@ -54,14 +61,14 @@ wrangler dev
 [Tutorials](https://developers.cloudflare.com/workers/tutorials)
 
 The starter point of the Worker is **index.js** but Cloudflare Workers also 
-[supports other languages](https://developers.cloudflare.com/workers/platform/languages)
+[supports other languages](https://developers.cloudflare.com/workers/platform/languages).
 
-For this project was are using JavaScript only since we are managing the project with Lerna.
+For this project we are using JavaScript only since we are managing the project with Lerna.
 
 ## Deployment
 
-We use Lerna locally and publish all workers at once, so you need to update your `package.json` with entries for "build"
-and "publish", but these entries are not needed for publishing a single worker. 
+We use Lerna locally to publish all the Workers at once, so you need to update your `package.json` with entries for
+`build` and `publish`, but these entries are not needed for publishing a single worker. 
 
 From the repository root run
 
@@ -77,10 +84,10 @@ wrangler publish
 
 ![wrangler publish](images/wrangler-publish.png)
 
-We use a GitHub Action to deploy on merge to main branch but each worker deployment is separate. 
+We use a GitHub Action to deploy on merge to main branch but each Worker deployment is separate. 
 
-So you will also need to update the workflow **wrangler.yml** and add another entry for your worker, take the example
-of `john/package.json`.
+So you will also need to update the workflow [**wrangler.yml**](.github/workflows/wrangler.yml) and add another entry
+for your Worker, take the example of [packages/john/package.json](packages/john/package.json).
 
 Example **.github/workflows/wrangler.yml**
 
@@ -97,7 +104,7 @@ my-worker:
         workingDirectory: "packages/my-worker"
 ```
 
-Using this example you can change all strings 'my-worker' for your worker name (you need to add it at **jobs:** scope).
+Using this example you can change all strings `my-worker` for your Worker name (you need to add it at **jobs:** scope).
 
 ## Workers Platform
 
@@ -136,7 +143,8 @@ Using this example you can change all strings 'my-worker' for your worker name (
 - [Emoji cheat sheet](https://github.com/WebpageFX/emoji-cheat-sheet.com)
 - [Emojipedia](https://emojipedia.org)
 - [Typer.js](https://steven.codes/typerjs/)
-- [EditorConfig](https://editorconfig.org/)
+- [EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs](https://editorconfig.org/)
+- [Portable Network Graphics is a raster-graphics file format that supports lossless data compression. PNG was developed as an improved, non-patented replacement for Graphics Interchange Format. PNG supports palette-based images, grayscale images, and full-color non-palette-based RGB or RGBA images](https://en.wikipedia.org/wiki/Portable_Network_Graphics)  
 - [Convert your images to base64](https://www.base64-image.de/)
 - [GIF to base64 converter](https://onlineimagetools.com/convert-gif-to-base64)
 - [Content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network)
@@ -149,7 +157,7 @@ Using this example you can change all strings 'my-worker' for your worker name (
 - [Homebrew - The Missing Package Manager for macOS (or Linux)](https://brew.sh/)
 - [GitHub Actions - Automate your workflow from idea to production](https://github.com/features/actions)
 - [JSON (JavaScript Object Notation) is a lightweight data-interchange format](http://www.json.org/json-en.html)
-- [Markdown](https://daringfireball.net/projects/markdown/)
+- [Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber and Aaron Swartz. Markdown is often used for formatting readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor](https://daringfireball.net/projects/markdown/)
 - [YAML Ain't Markup Language](https://yaml.org/)
 - [TOML - Tom's Obvious, Minimal Language (and friends)](https://github.com/toml-lang)
 - [A media type (formerly known as MIME type)](https://en.wikipedia.org/wiki/Media_type)  
@@ -158,6 +166,6 @@ Using this example you can change all strings 'my-worker' for your worker name (
 - [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
 - [GitHub Octodex. Playground and home for all octocats](https://octodex.github.com/)
 
-## Islands 🦭 🦑 🐙 ⛵ 🏊 🏖️
+## Islands 🦭 🦑 🦈 🐙 🐡 🐠 🐟 ♓ ⛵ 🏊 🏖️
 
 - [John](https://john.roquesbeach.workers.dev/)
