@@ -39,7 +39,7 @@ wrangler generate my-worker
 cd my-worker
 ```
 
-Since we are building all the Workers under one account and subdomain you must fill out your
+Since we are building all the Workers under one account and subdomain `roquesbeach.workers.dev` you must fill out your
 [wrangler.toml](packages/john/wrangler.toml) with
 
 ```toml
