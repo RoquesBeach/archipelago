@@ -1,4 +1,5 @@
 # archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -119,6 +120,8 @@ Using this example you can change all strings `my-worker` for your Worker name (
 - [JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat](https://developer.mozilla.org/en-US/docs/Web/javascript)
 - [Git hooks made easy 🐶 woof!](https://typicode.github.io/husky/#/)
 - [Jekyll - Transform your plain text into static websites and blogs](https://jekyllrb.com/)
+- [Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed. Bundler is an exit from dependency hell, and ensures that the gems you need are present in development, staging, and production. Starting work on a project is as simple as bundle install](https://bundler.io/)
+- [Patch-level verification for Bundler](https://github.com/rubysec/bundler-audit)
 - [GitHub Pages - Websites for you and your projects](https://pages.github.com/)
 - [ESLint is a static code analysis tool for identifying problematic patterns found in JavaScript code. It was created by Nicholas C. Zakas in 2013. Rules in ESLint are configurable, and customized rules can be defined and loaded. ESLint covers both code quality and coding style issues](https://eslint.org/)
 - [V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others](https://v8.dev/)
