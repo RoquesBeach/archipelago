@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+bundle exec mdl .
+bundle exec reek -c .reek.yml
+bundle exec rubocop -A
