@@ -1,4 +1,4 @@
-# archipelago
+# archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙 
 
 Cloudflare Workers provides a serverless execution environment that allows you to create entirely new applications
 or augment existing ones without configuring or maintaining infrastructure.
@@ -27,13 +27,23 @@ or augment existing ones without configuring or maintaining infrastructure.
 
 ## Creating a new worker
 
-`cd packages`
+```shell
+cd packages
+wrangler generate my-worker
+cd my-worker
+```
 
-`wrangler generate my-worker` //<- define the worker name here
+Since we are building all the Workers under one account and subdomain you must fill out your [wrangler.toml](packages/john/wrangler.toml) with
 
-`cd my-worker`
+```toml
+account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
+```
 
-`wangler dev` //<- test locally
+Then to test the Worker locally run
+
+```shell
+wrangler dev
+```
 
 ![wrangler dev](images/wrangler-dev.png)
 
@@ -55,13 +65,13 @@ and "publish", but these entries are not needed for publishing a single worker.
 
 From the repository root run
 
-```
+```shell
 lerna run publish
 ```
 
 To deploy a single Worker `cd` to its directory and run
 
-```
+```shell
 wrangler publish
 ```
 
@@ -74,13 +84,13 @@ of `john/package.json`.
 
 Example **.github/workflows/wrangler.yml**
 
-```yml
+```yaml
 my-worker:
   runs-on: ubuntu-latest
-  name: my-worker
+  name: 🧘 my-worker
   steps:
     - uses: actions/checkout@v2
-    - name: Publish
+    - name: 🚀 Publish
       uses: cloudflare/wrangler-action@1.3.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
@@ -97,6 +107,8 @@ Using this example you can change all strings 'my-worker' for your worker name (
 
 - [Deliver an HTML page from an HTML string directly inside the Worker script](https://developers.cloudflare.com/workers/examples/return-html)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript)
+- [V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others](https://v8.dev/)
+- [npm is a package manager for the JavaScript programming language. npm, Inc. is a subsidiary of GitHub, an American multinational corporation that provides hosting for software development and version control with the usage of Git. It is the default package manager for the JavaScript runtime environment Node.js](https://www.npmjs.com/)
 - [Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm)
 - [Ubuntu on WSL - Install a complete Ubuntu terminal environment in minutes on Windows 10 with Windows Subsystem for Linux (WSL)](https://ubuntu.com/wsl)
 - [VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use](https://www.virtualbox.org/)
@@ -144,7 +156,8 @@ Using this example you can change all strings 'my-worker' for your worker name (
 - [The Dublin Core, also known as the Dublin Core Metadata Element Set, is a set of fifteen "core" elements (properties) for describing resources](https://en.wikipedia.org/wiki/Dublin_Core)  
 - [A favicon (/ˈfæv.ɪˌkɒn/; short for favorite icon), also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons, associated with a particular website or web page](https://en.wikipedia.org/wiki/Favicon)
 - [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
+- [GitHub Octodex. Playground and home for all octocats](https://octodex.github.com/)
 
-## Islands
+## Islands 🦭 🦑 🐙 ⛵ 🏊 🏖️
 
 - [John](https://john.roquesbeach.workers.dev/)
