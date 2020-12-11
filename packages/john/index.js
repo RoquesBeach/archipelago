@@ -5,21 +5,19 @@ const html = `<!doctype html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>John's Beach</title>
-
     <!-- Facebook Meta Tags -->
     <meta property="og:image" content="https://fuchsia.surf/assets/images/logos/fuchsia-307.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="360">
     <meta property="og:image:height" content="360">
-    <meta property="og:image:alt" content="The Ancient Art of War is a computer game designed by Dave and Barry Murry, developed by Evryware, and originally published by Broderbund in 1984. It is generally recognized as one of the first real-time strategy or real-time tactics games. ">
+    <meta property="og:image:alt" content="The Ancient Art of War is a computer game designed by Dave and Barry Murry, developed by Evryware, and originally published by Broderbund in 1984. It is generally recognized as one of the first real-time strategy or real-time tactics games">
     <meta property="og:title" content="The growing beach resort known as John">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://john.roquesbeach.workers.dev">
     <meta property="og:description" content="Los Roques archipelago islands' pristine coral reef attracts many wealthy
       visitors, especially from Europe, some of whom come in their own yachts and anchor in the inner, protected shallow
       waters. Development and tourism are controlled. Because of the wide variety of seabirds and rich aquatic life, the
-      Venezuelan government declared Los Roques a National Park in 1972.">
-
+      Venezuelan government declared Los Roques a National Park in 1972">
     <!-- Twitter Meta Tags -->
     <meta property="twitter:domain" content="john.roquesbeach.workers.dev">
     <meta property="twitter:url" content="https://john.roquesbeach.workers.dev">
@@ -27,7 +25,7 @@ const html = `<!doctype html>
     <meta name="twitter:description" content="Los Roques archipelago islands' pristine coral reef attracts many wealthy
       visitors, especially from Europe, some of whom come in their own yachts and anchor in the inner, protected shallow
       waters. Development and tourism are controlled. Because of the wide variety of seabirds and rich aquatic life, the
-      Venezuelan government declared Los Roques a National Park in 1972.">
+      Venezuelan government declared Los Roques a National Park in 1972">
     <style type="text/css">
       a { color: black; }
       li { list-style-type: none; }
@@ -43,7 +41,6 @@ const html = `<!doctype html>
     </div>
     <div>
       <h1 id="edx-certificates"><strong>edX Certificates</strong></h1>
-
       <ul>
         <li><a href="https://courses.edx.org/certificates/8c19c917cbac4fbc88e63d20338ef546">Microsoft - DAT204x: Introduction to R for Data Science</a></li>
         <li><a href="https://courses.edx.org/certificates/2e8ec966312646ad9a5697f342b6ecff">Microsoft - DAT208x: Introduction to Python for Data Science</a></li>
@@ -51,27 +48,20 @@ const html = `<!doctype html>
         <li><a href="https://courses.edx.org/certificates/f6dbf8dcff354947aff06153b5fb8462">SchoolYourself - AlgebraX: Introduction to Algebra</a></li>
         <li><a href="https://courses.edx.org/certificates/f05e37b1e8a347b4bc001a2fb063210a">SchoolYourself - GeometryX: Introduction to Geometry</a></li>
       </ul>
-
       <h1 id="datacamp-certificates"><strong>DataCamp Certificates</strong></h1>
-
       <h4 id="career-tracks">Career Tracks</h4>
-
       <ul>
         <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/4e55c6d35b94ae97a9824dfebea38d890448feb6">Python Programmer - Old</a></li>
         <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/1de989b46e423beacca2a8fed22877fcce8519b7">Python Programmer - Old 2</a></li>
       </ul>
-
       <h4 id="skill-tracks">Skill Tracks</h4>
-
       <ul>
         <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/5d6ed74611456e1154efe7ee70cc6d16092b543f">Python Fundamentals Track</a></li>
         <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/c17efd4fc0cb28adeed84db9fa06c6b405294ed6">Importing &amp; Cleaning Data with Python - Old</a></li>
         <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/2475226d34bacded44ad1436acd6e265394b87d5">Data Manipulation with Python - Old</a></li>
         <li><a href="https://www.datacamp.com/statement-of-accomplishment/track/4164d8c317b57d72493e53654211149811f6eac9">Anaconda Skills</a></li>
       </ul>
-
       <h4 id="courses">Courses</h4>
-
       <ul>
         <li>Python
           <ol>
@@ -181,16 +171,13 @@ const html = `<!doctype html>
             let icon = document.getElementById("icon");
             let temperature = document.getElementById("temp");
             let humidity = document.getElementById("humidity-div");
-
             searchButton.addEventListener("click", findWeatherDetails);
             searchInput.addEventListener("keyup", enterPressed);
-
             function enterPressed(event) {
                 if (event.key === "Enter") {
                     findWeatherDetails();
                 }
             }
-
             function findWeatherDetails() {
                 if (searchInput.value === "") {
 
@@ -200,7 +187,6 @@ const html = `<!doctype html>
                     httpRequestAsync(searchLink, theResponse);
                 }
             }
-
             function theResponse(response) {
                 let jsonObject = JSON.parse(response);
                 cityName.innerHTML = jsonObject.name;
@@ -208,7 +194,6 @@ const html = `<!doctype html>
                 temperature.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
                 humidity.innerHTML = jsonObject.main.humidity + "%";
             }
-
             function httpRequestAsync(url, callback)
             {
                 var httpRequest = new XMLHttpRequest();
