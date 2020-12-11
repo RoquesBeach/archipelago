@@ -1,0 +1,23 @@
+exclude_paths:
+  - vendor/bundle
+detectors:
+  Attribute:
+    enabled: false
+  ControlParameter:
+    enabled: false
+  DuplicateMethodCall:
+    enabled: false
+  FeatureEnvy:
+    enabled: false
+  InstanceVariableAssumption:
+    enabled: false
+  LongParameterList:
+    enabled: false
+  NestedIterators:
+    enabled: false
+  TooManyStatements:
+    enabled: false
+  UncommunicativeVariableName:
+    enabled: false
+  UtilityFunction:
+    enabled: false
