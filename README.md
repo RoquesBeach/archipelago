@@ -56,7 +56,7 @@ Then to test the Worker locally run
 wrangler dev
 ```
 
-![wrangler dev](images/wrangler-dev.png)
+![wrangler dev](assets/images/wrangler-dev.png)
 
 ## Coding
 
@@ -86,7 +86,7 @@ To deploy a single Worker `cd` to its directory and run
 wrangler publish
 ```
 
-![wrangler publish](images/wrangler-publish.png)
+![wrangler publish](assets/images/wrangler-publish.png)
 
 We use a GitHub Action to deploy on merge to main branch but each Worker deployment is separate.
 
@@ -112,7 +112,7 @@ Using this example you can change all strings `my-worker` for your Worker name (
 
 ## Workers Platform
 
-![Cloudflare Worker Limits](images/worker-limits.png)
+![Cloudflare Worker Limits](assets/images/worker-limits.png)
 
 ## Pseudo Websites with Workers Free 🍬 💃 🕺 😎
 
@@ -198,7 +198,7 @@ Using this example you can change all strings `my-worker` for your Worker name (
 - [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
 - [GitHub Octodex. Playground and home for all octocats](https://octodex.github.com/)
 
-![Running Workers in Lynx Browser](images/lynx-browser-workers.png)
+![Running Workers in Lynx Browser](assets/images/lynx-browser-workers.png)
 
 ## Caribbean Sea 🦭 🦑 🦈 🐙
 
