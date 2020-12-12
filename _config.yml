@@ -7,7 +7,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   own yachts and anchor in the inner, protected shallow waters. Development and tourism are controlled.
   Because of the wide variety of seabirds and rich aquatic life, the Venezuelan government declared Los Roques a
   National Park in 1972.
-baseurl: "/archipelago" # the subpath of your site, e.g. /blog
+baseurl: "/archipelago"  # the subpath of your site, e.g. /blog
 url: https://roquesbeach.github.io
 repository: https://github.com/roquesbeach/archipelago
 github_username: roquesbeach
