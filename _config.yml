@@ -39,10 +39,12 @@ exclude:
   - .rubocop.yml
   - .ruby-version
   - doc
+  - CODEOWNERS
   - Gemfile
   - Gemfile.lock
   - i
   - lerna.json
+  - LICENSE
   - lint
   - lrp
   - node_modules
