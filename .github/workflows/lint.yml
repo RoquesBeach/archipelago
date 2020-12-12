@@ -1,10 +1,10 @@
-name: Lint
+name: ❄️ Lint
 
 on: [pull_request]
 
 jobs:
   markdownlint:
-    name: 🧹 Markdown
+    name: 🍶 Markdown
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,20 +12,20 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: 🍶 Markdown
+      - name: 🧹 Markdownlint
       - run: npm install -g markdownlint-cli@0.23.2
       - run: markdownlint '**/*.md' --ignore node_modules
   shellcheck:
-    name: 🧹 Shell
+    name: 🥂 Shell
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 🥂 ShellCheck
+      - name: 🧹 ShellCheck
         uses: ludeeus/action-shellcheck@master
   yamllint:
-    name: 🧹 YAML
+    name: 🍺 YAML
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 🍺 YAML Lint
+      - name: 🧹 YAML Lint
         uses: ibiqlik/action-yamllint@v3
