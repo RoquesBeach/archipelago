@@ -8,13 +8,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   Because of the wide variety of seabirds and rich aquatic life, the Venezuelan government declared Los Roques a
   National Park in 1972.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://roquesbeach.github.io/archipelago/
+url: https://roquesbeach.github.io/archipelago
 repository: https://github.com/roquesbeach/archipelago
 github_username: roquesbeach
 # paginate: 20
 feed:
   path: feed.xml
-logo: "/images/roques_1280_x_640.jpg"
+# logo: "/images/roques_1280_x_640.jpg"
 # Build settings
 markdown: kramdown
 sass:
@@ -31,4 +31,24 @@ plugins:
   - jekyll-sitemap
   - jemoji
 exclude:
+  - .all-contributorsrc
+  - .eslintignore
   - .gitignore
+  - .mdlrc
+  - .reek.yml
+  - .rubocop.yml
+  - .ruby-version
+  - doc
+  - Gemfile
+  - Gemfile.lock
+  - i
+  - lerna.json
+  - lint
+  - lrp
+  - node_modules
+  - package.json
+  - package-lock.json
+  - packages
+  - requirements.txt
+  - server
+  - venv
