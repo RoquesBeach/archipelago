@@ -14,7 +14,7 @@ github_username: roquesbeach
 # paginate: 20
 feed:
   path: feed.xml
-# logo: "/images/roques_1280_x_640.jpg"
+logo: "/assets/images/roques_1280_x_640.jpg"
 # Build settings
 markdown: kramdown
 sass:

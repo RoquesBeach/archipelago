@@ -1,0 +1,34 @@
+name: Lint
+
+on: [pull_request]
+
+jobs:
+  markdownlint:
+    name: 🧹 Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🚀 Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: 🍶 Markdown
+      - run: npm install -g markdownlint-cli@0.23.2
+      - run: markdownlint '**/*.md' --ignore node_modules
+  shellcheck:
+    name: 🧹 Shell
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🥂 ShellCheck
+        uses: ludeeus/action-shellcheck@master
+  yamllint:
+    name: 🧹 YAML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🍺 YAML Lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          config_data: |
+            ignore: charts/site.yml
