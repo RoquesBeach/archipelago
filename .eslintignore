@@ -1,5 +1,11 @@
 node_modules
 packages/*/dist
 packages/*/worker
+languages/python/__target__
+languages/*/dist
+languages/*/worker
 _site
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 venv

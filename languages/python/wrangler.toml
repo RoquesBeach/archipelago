@@ -1,0 +1,7 @@
+name = "python"
+type = "webpack"
+account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
+workers_dev = true
+webpack_config = "webpack.config.js"
+route = ""
+zone_id = ""
