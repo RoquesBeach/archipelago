@@ -4,6 +4,7 @@ python3 --version
 python3 -m pip install --upgrade pip
 pip3 --version
 pip3 install --upgrade virtualenv
+# shellcheck disable=SC1091
 python3 -m venv venv || virtualenv venv && . venv/bin/activate
 pip3 install -r requirements.txt
 ruby -v
