@@ -12,7 +12,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: 🧹 Markdownlint
       - run: npm install -g markdownlint-cli@0.23.2
       - run: markdownlint '**/*.md' --ignore node_modules
   shellcheck:
