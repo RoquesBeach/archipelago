@@ -4,7 +4,7 @@ const html = `<!doctype html>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>John's Beach</title>
+    <title>John's Beach 🍇 😎 🤓 🚀 🚀 🚀</title>
     <!-- Facebook Meta Tags -->
     <meta property="og:image" content="https://fuchsia.surf/assets/images/logos/fuchsia-307.png">
     <meta property="og:image:type" content="image/png">

@@ -43,10 +43,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - i
+  - languages
   - lerna.json
   - LICENSE
   - lint
   - lrp
+  - .markdownlint.yml
   - node_modules
   - package.json
   - package-lock.json

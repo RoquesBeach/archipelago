@@ -3,4 +3,5 @@ recommonmark
 sphinx
 sphinx-intl
 sphinx_rtd_theme
+transcrypt
 virtualenv
