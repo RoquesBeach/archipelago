@@ -16,3 +16,23 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: 'packages/john'
+  images:
+    runs-on: ubuntu-latest
+    name: 🖼️ 📷 Images
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🚀 Publish
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/images'
+  random:
+    runs-on: ubuntu-latest
+    name: ⚙️ 🍇 Random
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🚀 Publish
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'packages/random'
