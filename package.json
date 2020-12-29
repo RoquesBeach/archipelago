@@ -2,10 +2,6 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "husky": "^5.0.4",
     "lerna": "^3.22.1"
-  },
-  "scripts": {
-    "postinstall": "husky install"
   }
 }

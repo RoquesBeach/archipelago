@@ -1,5 +1,10 @@
 # archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙
 
+[![Los Roques archipelago](https://img.shields.io/website?label=github%20pages&url=https%3A%2F%2Froquesbeach.github.io%2Farchipelago%2F)](https://roquesbeach.github.io/archipelago/)
+[![John at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Fjohn.roquesbeach.workers.dev%2F)](https://john.roquesbeach.workers.dev/)
+[![Images at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Fimages.roquesbeach.workers.dev%2F)](https://images.roquesbeach.workers.dev/)
+[![Random at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Frandom.roquesbeach.workers.dev%2F)](https://random.roquesbeach.workers.dev/)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -74,13 +79,15 @@ For this project we are using JavaScript only since we are managing the project 
 We use Lerna locally to publish all the Workers at once, so you need to update your `package.json` with entries for
 `build` and `publish`, but these entries are not needed for publishing a single worker.
 
-From the repository root run
+From the repository root the administrators can run
 
 ```shell
 lerna run publish
 ```
 
-To deploy a single Worker `cd` to its directory and run
+![lerna run publish](assets/images/lerna-run-publish.png)
+
+Administrators can also deploy a single Worker. `cd` to its directory and run
 
 ```shell
 wrangler publish
@@ -118,7 +125,7 @@ Using this example you can change all strings `my-worker` for your Worker name (
 
 - [Deliver an HTML page from an HTML string directly inside the Worker script](https://developers.cloudflare.com/workers/examples/return-html)
 - [JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat](https://developer.mozilla.org/en-US/docs/Web/javascript)
-- [Git hooks made easy 🐶 woof!](https://typicode.github.io/husky/#/)
+- [pre-commit - A framework for managing and maintaining multi-language pre-commit hooks](https://pre-commit.com/)
 - [Jekyll - Transform your plain text into static websites and blogs](https://jekyllrb.com/)
 - [Minima is a one-size-fits-all Jekyll theme for writers](https://github.com/jekyll/minima)
 - [A Jekyll plugin for rendering GitHub avatars](https://github.com/benbalter/jekyll-avatar)
@@ -207,6 +214,8 @@ Using this example you can change all strings `my-worker` for your Worker name (
 ## Islands 🐡 🐠 🐟 ♓ ⛵ 🏊 🏖️
 
 - [John](https://john.roquesbeach.workers.dev/)
+- [Images](https://images.roquesbeach.workers.dev/)
+- [Random](https://random.roquesbeach.workers.dev/)
 
 ## Contributors ✨
 

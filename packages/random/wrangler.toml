@@ -1,0 +1,6 @@
+name = "random"
+type = "webpack"
+account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
+workers_dev = true
+route = ""
+zone_id = ""
