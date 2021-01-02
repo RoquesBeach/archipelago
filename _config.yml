@@ -42,6 +42,7 @@ exclude:
   - CODEOWNERS
   - Gemfile
   - Gemfile.lock
+  - gcloud
   - i
   - languages
   - lerna.json

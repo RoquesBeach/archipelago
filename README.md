@@ -209,7 +209,7 @@ Using this example you can change all strings `my-worker` for your Worker name (
 
 ## Caribbean Sea 🦭 🦑 🦈 🐙
 
-[archipelago](https://roquesbeach.github.io/archipelago/)
+- [archipelago](https://roquesbeach.github.io/archipelago/)
 
 ## Islands 🐡 🐠 🐟 ♓ ⛵ 🏊 🏖️
 
