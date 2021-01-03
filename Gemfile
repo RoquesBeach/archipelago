@@ -20,6 +20,7 @@ end
 gem 'bundler-audit'
 gem 'kramdown'
 gem 'mdl'
+gem 'nokogiri', '>= 1.11.0.rc4'
 gem 'pry'
 gem 'reek'
 gem 'rubocop', require: false
