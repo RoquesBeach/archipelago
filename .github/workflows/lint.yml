@@ -79,3 +79,18 @@ jobs:
           gem install bundler
           bundle install --jobs 4 --retry 3
           bundle exec rubocop
+  mdl:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: ['2.6', '2.7']
+    name: ☕ Markdownlint Ruby ${{ matrix.ruby }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+          bundle exec mdl .
