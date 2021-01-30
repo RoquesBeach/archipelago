@@ -233,16 +233,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/jbampton"><img src="https://avatars3.githubusercontent.com/u/418747?v=4" width="100px;" alt=""/><br /><sub><b>John Bampton</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Code">💻</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://spectralapps.com.br"><img src="https://avatars1.githubusercontent.com/u/56676505?v=4" width="100px;" alt=""/><br /><sub><b>Andrew </b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=Andrew-Colman" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=all-contributors" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/summerhill5"><img src="https://avatars2.githubusercontent.com/u/42298149?v=4" width="100px;" alt=""/><br /><sub><b>Jorge Araica</b></sub></a><br /><a href="#design-summerhill5" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/features/security"><img src="https://avatars1.githubusercontent.com/u/27347476?v=4" width="100px;" alt=""/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#maintenance-dependabot" title="Maintenance">🚧</a> <a href="#security-dependabot" title="Security">🛡️</a></td>
+    <td align="center"><a href="https://github.com/jbampton"><img src="https://avatars3.githubusercontent.com/u/418747?v=4?s=100" width="100px;" alt=""/><br /><sub><b>John Bampton</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Code">💻</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://spectralapps.com.br"><img src="https://avatars1.githubusercontent.com/u/56676505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew </b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=Andrew-Colman" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=all-contributors" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/summerhill5"><img src="https://avatars2.githubusercontent.com/u/42298149?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jorge Araica</b></sub></a><br /><a href="#design-summerhill5" title="Design">🎨</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=summerhill5" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/features/security"><img src="https://avatars1.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#maintenance-dependabot" title="Maintenance">🚧</a> <a href="#security-dependabot" title="Security">🛡️</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the
