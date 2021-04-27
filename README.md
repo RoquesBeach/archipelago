@@ -16,50 +16,53 @@ permalink: /
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[Cloudflare Workers](https://workers.cloudflare.com/) يوفر العمال بيئة تنفيذ بدون خادم تتيح لك إنشاء تطبيقات جديدة تمامًا أو زيادة التطبيقات الحالية دون تكوين البنية التحتية أو صيانتها..
+[Cloudflare Workers](https://workers.cloudflare.com/) provides a serverless execution environment that allows you to
+create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
 
-## المتطلبات
+## Requirements
 
 - [Node.js](https://nodejs.org/en/)
 
-> تحقق من التثبيت: `node -v`
+> verify installation: `node -v`
 
 - [Git](https://git-scm.com/)
 
-> تحقق من التثبيت: `git --version`
+> verify installation: `git --version`
 
 - [Lerna](https://lerna.js.org/) -> `npm install -g lerna`
 
-> تحقق من التثبيت: `lerna -v`
+> verify installation: `lerna -v`
 
-## الخطوات الأولى
+## First Steps
 
-يمكنك التسجيل في [sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers) باستخدام حسابك الخاص مجانًا وتجربة نموذج التعليمات البرمجية في
-[Playground](https://developers.cloudflare.com/workers/learning/playground). سيكون استخدام الجانب الإداري لحساب Cloudflare Workers أسهل طريقة لنشر العمال دون استخدام Wrangler CLI
+You can [sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers) with your own account for
+free and experiment with the sample code in the
+[Playground](https://developers.cloudflare.com/workers/learning/playground). Using the admin side of your Cloudflare
+Workers account will be the easiest way to deploy Workers without using the
 [Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler).
 
-## البدء
+## Getting started
 
 - `npm install -g @cloudflare/wrangler`
 
 - `wrangler --version`
 
-## انشاء عامل جديد
+## Creating a new worker
 
 ```shell
-cd حزم
-رانجلر توليد العامل
-cd العامل الخاص بي
+cd packages
+wrangler generate my-worker
+cd my-worker
 ```
 
-ظرًا لأننا نبني جميع العمال تحت حساب واحد ونطاق فرعي `roquesbeach.workers.dev` يجب عليك ملء
-[wrangler.toml](packages/john/wrangler.toml) ب
+Since we are building all the Workers under one account and subdomain `roquesbeach.workers.dev` you must fill out your
+[wrangler.toml](packages/john/wrangler.toml) with
 
 ```toml
 account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
 ```
 
-ثم لاختبار العامل محليًا
+Then to test the Worker locally run
 
 ```shell
 wrangler dev
@@ -67,23 +70,23 @@ wrangler dev
 
 ![wrangler dev](assets/images/wrangler-dev.png)
 
-## الترميز
+## Coding
 
-[أمثلة](https://developers.cloudflare.com/workers/examples)
+[Examples](https://developers.cloudflare.com/workers/examples)
 
-[دروس](https://developers.cloudflare.com/workers/tutorials)
+[Tutorials](https://developers.cloudflare.com/workers/tutorials)
 
 The starter point of the Worker is **index.js** but Cloudflare Workers also
-[دعم لغات أخرى](https://developers.cloudflare.com/workers/platform/languages).
+[supports other languages](https://developers.cloudflare.com/workers/platform/languages).
 
-بالنسبة لهذا المشروع ، نحن نستخدم JavaScript فقط لأننا ندير المشروع مع Lerna.
+For this project we are using JavaScript only since we are managing the project with Lerna.
 
-## تعيين
+## Deployment
 
-نستخدم Lerna محليًا لنشر جميع العمال في وقت واحد, لذلك تحتاج إلى تحديث `package.json` بإدخالات
-`بناء` و `نشر`, ولكن هذه الإدخالات ليست ضرورية لنشر عامل واحد.
+We use Lerna locally to publish all the Workers at once, so you need to update your `package.json` with entries for
+`build` and `publish`, but these entries are not needed for publishing a single worker.
 
-من جذر المستودع يمكن للمسؤولين تشغيله
+From the repository root the administrators can run
 
 ```shell
 lerna run publish
@@ -91,7 +94,7 @@ lerna run publish
 
 ![lerna run publish](assets/images/lerna-run-publish.png)
 
-يمكن للمسؤولين أيضًا نشر عامل واحد. `cd` إلى دليله وتشغيله
+Administrators can also deploy a single Worker. `cd` to its directory and run
 
 ```shell
 wrangler publish
@@ -99,32 +102,33 @@ wrangler publish
 
 ![wrangler publish](assets/images/wrangler-publish.png)
 
-نستخدم إجراء GitHub للنشر عند الدمج إلى الفرع الرئيسي ولكن كل عملية نشر للعمال منفصلة.
+We use a GitHub Action to deploy on merge to main branch but each Worker deployment is separate.
 
-لذلك ستحتاج أيضًا إلى تحديث مسار العمل [**wrangler.yml**](.github/workflows/wrangler.yml) وإضافة إدخال آخر لموظفك, خذ مثال[packages/john/package.json](packages/john/package.json).
+So you will also need to update the workflow [**wrangler.yml**](.github/workflows/wrangler.yml) and add another entry
+for your Worker, take the example of [packages/john/package.json](packages/john/package.json).
 
-مثال **.github/workflows/wrangler.yml**
+Example **.github/workflows/wrangler.yml**
 
 ```yaml
-العامل الخاص بي:
-  يشتغل على: ubuntu-latest
-  الاسم: 🧘 العامل الخاص بي
-  الخطوات:
-    - يستخدم: حركات/خروج@v2
-    - الاسم: 🚀 نشر
-      يستخدم: cloudflare/wrangler-action@1.3.0
-      مع:
+my-worker:
+  runs-on: ubuntu-latest
+  name: 🧘 my-worker
+  steps:
+    - uses: actions/checkout@v2
+    - name: 🚀 Publish
+      uses: cloudflare/wrangler-action@1.3.0
+      with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         workingDirectory: "packages/my-worker"
 ```
 
-استخدام هذا المثال ، يمكنك تغيير جميع السلاسل الخاصة ب `العامل الخاص بي` لأسم العامل الخاص بك (يجب ان تضاف الى **الوظائف:** scope).
+Using this example you can change all strings `my-worker` for your Worker name (you need to add it at **jobs:** scope).
 
-## منصة العاملين
+## Workers Platform
 
-![Cloudflare حدود عمال](assets/images/worker-limits.png)
+![Cloudflare Worker Limits](assets/images/worker-limits.png)
 
-## مواقع الويب الزائفة مع العمال مجانًا 🍬 💃 🕺 😎
+## Pseudo Websites with Workers Free 🍬 💃 🕺 😎
 
 - [Deliver an HTML page from an HTML string directly inside the Worker script](https://developers.cloudflare.com/workers/examples/return-html)
 - [JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat](https://developer.mozilla.org/en-US/docs/Web/javascript)
