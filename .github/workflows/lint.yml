@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: 🧹 YAML Lint
-        uses: ibiqlik/action-yamllint@v3.0.1
+        uses: ibiqlik/action-yamllint@v3.0.2
   flake8:
     runs-on: ${{ matrix.os }}
     strategy:
