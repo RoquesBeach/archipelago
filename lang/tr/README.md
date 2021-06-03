@@ -16,7 +16,7 @@ permalink: /
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[Cloudflare Workers](https://workers.cloudflare.com/), tamamen yeni uygulamalar oluşturmaniza ve/veya var olanları altyapı yapılandırmadan ya da barındırmadan geliştirmenizi mümkün kılan, sunucusuz bir çalışma ortamı sağlar.
+[Cloudflare Workers](https://workers.cloudflare.com/), tamamen yeni uygulamalar oluşturmanızı ve/veya var olanları, altyapı yapılandırmadan ya da barındırmadan geliştirmenizi mümkün kılan, sunucusuz bir çalışma ortamı sağlar.
 
 ## Gereksinimler
 
