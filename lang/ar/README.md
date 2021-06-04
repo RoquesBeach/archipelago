@@ -1,93 +1,83 @@
 ---
 layout: page
-title: archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙
-permalink: /
+title: archipiélago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙
+permalink: /lang/ar/
 ---
 
-[English](README.md)
-[Arabic](lang/ar/README.md)
-[Spanish](lang/es/README.md)
+<div dir="rtl">
 
-[![Los Roques archipelago](https://img.shields.io/website?label=github%20pages&url=https%3A%2F%2Froquesbeach.github.io%2Farchipelago%2F)](https://roquesbeach.github.io/archipelago/)
-[![John at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Fjohn.roquesbeach.workers.dev%2F)](https://john.roquesbeach.workers.dev/)
-[![Images at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Fimages.roquesbeach.workers.dev%2F)](https://images.roquesbeach.workers.dev/)
-[![Random at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Frandom.roquesbeach.workers.dev%2F)](https://random.roquesbeach.workers.dev/)
+[English](../../README.md)
+[Arabic](README.md)
+[Spanish](../es/README.md)
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[Cloudflare Workers](https://workers.cloudflare.com/) يوفر العمال بيئة تنفيذ بدون خادم تتيح لك إنشاء تطبيقات جديدة تمامًا أو زيادة التطبيقات الحالية دون تكوين البنية التحتية أو صيانتها..
 
-[Cloudflare Workers](https://workers.cloudflare.com/) provides a serverless execution environment that allows you to
-create entirely new applications or augment existing ones without configuring or maintaining infrastructure.
-
-## Requirements
+## المتطلبات
 
 - [Node.js](https://nodejs.org/en/)
 
-> verify installation: `node -v`
+> تحقق من التثبيت: `node -v`
 
 - [Git](https://git-scm.com/)
 
-> verify installation: `git --version`
+> تحقق من التثبيت: `git --version`
 
 - [Lerna](https://lerna.js.org/) -> `npm install -g lerna`
 
-> verify installation: `lerna -v`
+> تحقق من التثبيت: `lerna -v`
 
-## First Steps
+## الخطوات الأولى
 
-You can [sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers) with your own account for
-free and experiment with the sample code in the
-[Playground](https://developers.cloudflare.com/workers/learning/playground). Using the admin side of your Cloudflare
-Workers account will be the easiest way to deploy Workers without using the
+يمكنك التسجيل في [sign up at Cloudflare Workers](https://dash.cloudflare.com/sign-up/workers) باستخدام حسابك الخاص مجانًا وتجربة نموذج التعليمات البرمجية في
+[Playground](https://developers.cloudflare.com/workers/learning/playground). سيكون استخدام الجانب الإداري لحساب Cloudflare Workers أسهل طريقة لنشر العمال دون استخدام Wrangler CLI
 [Wrangler CLI](https://developers.cloudflare.com/workers/cli-wrangler).
 
-## Getting started
+## البدء
 
 - `npm install -g @cloudflare/wrangler`
 
 - `wrangler --version`
 
-## Creating a new worker
+## انشاء عامل جديد
 
 ```shell
-cd packages
-wrangler generate my-worker
-cd my-worker
+cd حزم
+رانجلر توليد العامل
+cd العامل الخاص بي
 ```
 
-Since we are building all the Workers under one account and subdomain `roquesbeach.workers.dev` you must fill out your
-[wrangler.toml](packages/john/wrangler.toml) with
+ظرًا لأننا نبني جميع العمال تحت حساب واحد ونطاق فرعي `roquesbeach.workers.dev` يجب عليك ملء
+[wrangler.toml](packages/john/wrangler.toml) ب
 
 ```toml
 account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
 ```
 
-Then to test the Worker locally run
+ثم لاختبار العامل محليًا
 
 ```shell
 wrangler dev
 ```
 
-![wrangler dev](assets/images/wrangler-dev.png)
+![wrangler-dev](https://user-images.githubusercontent.com/81928799/116220255-2a612380-a755-11eb-9183-b91d59bd3bf0.png)
 
-## Coding
+## الترميز
 
-[Examples](https://developers.cloudflare.com/workers/examples)
+[أمثلة](https://developers.cloudflare.com/workers/examples)
 
-[Tutorials](https://developers.cloudflare.com/workers/tutorials)
+[دروس](https://developers.cloudflare.com/workers/tutorials)
 
 The starter point of the Worker is **index.js** but Cloudflare Workers also
-[supports other languages](https://developers.cloudflare.com/workers/platform/languages).
+[دعم لغات أخرى](https://developers.cloudflare.com/workers/platform/languages).
 
-For this project we are using JavaScript only since we are managing the project with Lerna.
+بالنسبة لهذا المشروع ، نحن نستخدم JavaScript فقط لأننا ندير المشروع مع Lerna.
 
-## Deployment
+## تعيين
 
-We use Lerna locally to publish all the Workers at once, so you need to update your `package.json` with entries for
-`build` and `publish`, but these entries are not needed for publishing a single worker.
+نستخدم Lerna محليًا لنشر جميع العمال في وقت واحد, لذلك تحتاج إلى تحديث `package.json` بإدخالات
+`بناء` و `نشر`, ولكن هذه الإدخالات ليست ضرورية لنشر عامل واحد.
 
-From the repository root the administrators can run
+من جذر المستودع يمكن للمسؤولين تشغيله
 
 ```shell
 lerna run publish
@@ -95,41 +85,42 @@ lerna run publish
 
 ![lerna run publish](assets/images/lerna-run-publish.png)
 
-Administrators can also deploy a single Worker. `cd` to its directory and run
+يمكن للمسؤولين أيضًا نشر عامل واحد. `cd` إلى دليله وتشغيله
 
 ```shell
 wrangler publish
 ```
 
-![wrangler publish](assets/images/wrangler-publish.png)
+![wrangler-publish](https://user-images.githubusercontent.com/81928799/116220488-65635700-a755-11eb-95ec-5e47bbefd47c.png)
 
-We use a GitHub Action to deploy on merge to main branch but each Worker deployment is separate.
+نستخدم إجراء GitHub للنشر عند الدمج إلى الفرع الرئيسي ولكن كل عملية نشر للعمال منفصلة.
 
-So you will also need to update the workflow [**wrangler.yml**](.github/workflows/wrangler.yml) and add another entry
-for your Worker, take the example of [packages/john/package.json](packages/john/package.json).
+لذلك ستحتاج أيضًا إلى تحديث مسار العمل [**wrangler.yml**](.github/workflows/wrangler.yml) وإضافة إدخال آخر لموظفك, خذ مثال[packages/john/package.json](packages/john/package.json).
 
-Example **.github/workflows/wrangler.yml**
+مثال **.github/workflows/wrangler.yml**
 
 ```yaml
-my-worker:
-  runs-on: ubuntu-latest
-  name: 🧘 my-worker
-  steps:
-    - uses: actions/checkout@v2
-    - name: 🚀 Publish
-      uses: cloudflare/wrangler-action@1.3.0
-      with:
+العامل الخاص بي:
+  يشتغل على: ubuntu-latest
+  الاسم: 🧘 العامل الخاص بي
+  الخطوات:
+    - يستخدم: حركات/خروج@v2
+    - الاسم: 🚀 نشر
+      يستخدم: cloudflare/wrangler-action@1.3.0
+      مع:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         workingDirectory: "packages/my-worker"
 ```
 
-Using this example you can change all strings `my-worker` for your Worker name (you need to add it at **jobs:** scope).
+استخدام هذا المثال ، يمكنك تغيير جميع السلاسل الخاصة ب `العامل الخاص بي` لأسم العامل الخاص بك (يجب ان تضاف الى **الوظائف:** scope).
 
-## Workers Platform
+## منصة العاملين
 
-![Cloudflare Worker Limits](assets/images/worker-limits.png)
+![worker-limits](https://user-images.githubusercontent.com/81928799/116220591-7d3adb00-a755-11eb-9828-113eeb1592c4.png)
 
-## Pseudo Websites with Workers Free 🍬 💃 🕺 😎
+## مواقع الويب الزائفة مع العمال مجانًا 🍬 💃 🕺 😎
+
+</div>
 
 - [Deliver an HTML page from an HTML string directly inside the Worker script](https://developers.cloudflare.com/workers/examples/return-html)
 - [JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat](https://developer.mozilla.org/en-US/docs/Web/javascript)
@@ -224,30 +215,3 @@ Using this example you can change all strings `my-worker` for your Worker name (
 - [John](https://john.roquesbeach.workers.dev/)
 - [Images](https://images.roquesbeach.workers.dev/)
 - [Random](https://random.roquesbeach.workers.dev/)
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/jbampton"><img src="https://avatars3.githubusercontent.com/u/418747?v=4?s=100" width="100px;" alt=""/><br /><sub><b>John Bampton</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Code">💻</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=jbampton" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://spectralapps.com.br"><img src="https://avatars1.githubusercontent.com/u/56676505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Andrew </b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=Andrew-Colman" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4?s=100" width="100px;" alt=""/><br /><sub><b>All Contributors</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=all-contributors" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/summerhill5"><img src="https://avatars2.githubusercontent.com/u/42298149?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jorge Araica</b></sub></a><br /><a href="#design-summerhill5" title="Design">🎨</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=summerhill5" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/features/security"><img src="https://avatars1.githubusercontent.com/u/27347476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dependabot</b></sub></a><br /><a href="#maintenance-dependabot" title="Maintenance">🚧</a> <a href="#security-dependabot" title="Security">🛡️</a></td>
-    <td align="center"><a href="https://www.upwork.com/freelancers/~013dd1f9db3380689d"><img src="https://avatars.githubusercontent.com/u/81928799?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mujahid Al-Majali</b></sub></a><br /><a href="#translation-Majalian" title="Translation">🌍</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the
-[all-contributors](https://github.com/all-contributors/all-contributors)
-specification. Contributions of any kind welcome! 🍉 🥝 🍋 🍑 🥑 🥭 🍎
