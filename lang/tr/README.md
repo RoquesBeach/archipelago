@@ -5,8 +5,8 @@ permalink: /
 ---
 
 [English](README.md)
-[Spanish](lang/es/README.md)
 [Arabic](lang/ar/README.md)
+[Spanish](lang/es/README.md)
 [Turkish](lang/tr/README.md)
 
 [![Los Roques archipelago](https://img.shields.io/website?label=github%20pages&url=https%3A%2F%2Froquesbeach.github.io%2Farchipelago%2F)](https://roquesbeach.github.io/archipelago/)
