@@ -9,6 +9,7 @@ permalink: /lang/ar/
 [English](../../README.md)
 [Arabic](README.md)
 [Spanish](../es/README.md)
+[Turkish](lang/tr/README.md)
 
 [Cloudflare Workers](https://workers.cloudflare.com/) يوفر العمال بيئة تنفيذ بدون خادم تتيح لك إنشاء تطبيقات جديدة تمامًا أو زيادة التطبيقات الحالية دون تكوين البنية التحتية أو صيانتها..
 
