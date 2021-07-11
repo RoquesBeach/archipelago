@@ -204,7 +204,7 @@ wrangler publish
 - [gitignore - Specifies intentionally untracked files to ignore](https://git-scm.com/docs/gitignore)
 - [GitHub Octodex. Playground and home for all octocats](https://octodex.github.com/)
 
-![Running Workers in Lynx Browser](assets/images/lynx-browser-workers.png)
+![Running Workers in Lynx Browser](../../assets/images/lynx-browser-workers.png)
 
 ## Caribbean Sea 🦭 🦑 🦈 🐙
 
