@@ -61,6 +61,15 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "himanshu007-creator",
+      "name": "Himanshu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65963997?v=4",
+      "profile": "https://focused-wescoff-bfb488.netlify.app/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 6,
