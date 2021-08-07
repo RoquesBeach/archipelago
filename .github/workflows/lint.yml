@@ -40,8 +40,12 @@ jobs:
       - name: 🧹 ShellCheck
         uses: ludeeus/action-shellcheck@master
   yamllint:
-    name: 🍺 YAML
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ['2.7', '3.6', '3.7', '3.8', 'pypy-2.7', 'pypy-3.6', 'pypy-3.7']
+    name: 🍺 YAML Lint Python ${{ matrix.python-version }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
       - name: 🧹 YAML Lint
