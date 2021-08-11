@@ -243,7 +243,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.upwork.com/freelancers/~013dd1f9db3380689d"><img src="https://avatars.githubusercontent.com/u/81928799?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mujahid Al-Majali</b></sub></a><br /><a href="#translation-Majalian" title="Translation">🌍</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://focused-wescoff-bfb488.netlify.app/"><img src="https://avatars.githubusercontent.com/u/65963997?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Himanshu</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=himanshu007-creator" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://focused-wescoff-bfb488.netlify.app/"><img src="https://avatars.githubusercontent.com/u/65963997?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Himanshu</b></sub></a><br /><a href="https://github.com/RoquesBeach/archipelago/commits?author=himanshu007-creator" title="Documentation">📖</a> <a href="https://github.com/RoquesBeach/archipelago/commits?author=himanshu007-creator" title="Code">💻</a></td>
   </tr>
 </table>
 
