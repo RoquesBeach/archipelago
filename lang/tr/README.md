@@ -4,10 +4,10 @@ title: archipelago 🐚 🌊 🐬 🏄 🌴 🥥 🩴 🏖️ 👙
 permalink: /
 ---
 
-[English](README.md)
-[Arabic](lang/ar/README.md)
-[Spanish](lang/es/README.md)
-[Turkish](lang/tr/README.md)
+[English](../../README.md)
+[Arabic](../ar/README.md)
+[Spanish](../es/README.md)
+[Turkish](README.md)
 
 [![Los Roques archipelago](https://img.shields.io/website?label=github%20pages&url=https%3A%2F%2Froquesbeach.github.io%2Farchipelago%2F)](https://roquesbeach.github.io/archipelago/)
 [![John at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Fjohn.roquesbeach.workers.dev%2F)](https://john.roquesbeach.workers.dev/)
