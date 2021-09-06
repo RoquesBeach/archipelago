@@ -2,4 +2,4 @@ AllCops:
   Exclude:
     - vendor/**/*
   NewCops: enable
-  TargetRubyVersion: 2.7.2
+  TargetRubyVersion: 2.7.4
