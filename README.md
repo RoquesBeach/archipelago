@@ -15,7 +15,9 @@ permalink: /
 [![Random at Roques Beach](https://img.shields.io/website?label=workers.dev&url=https%3A%2F%2Frandom.roquesbeach.workers.dev%2F)](https://random.roquesbeach.workers.dev/)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [Cloudflare Workers](https://workers.cloudflare.com/) provides a serverless execution environment that allows you to
@@ -45,7 +47,7 @@ Workers account will be the easiest way to deploy Workers without using the
 
 ## Getting started
 
-- `npm install -g @cloudflare/wrangler`
+- `npm install -g wrangler`
 
 - `wrangler --version`
 
@@ -70,7 +72,13 @@ Then to test the Worker locally run
 wrangler dev
 ```
 
-![wrangler dev](assets/images/wrangler-dev.png)
+You can Listening at
+
+    - http://0.0.0.0:8787
+    - http://172.18.160.1:8787
+    - http://192.168.56.1:8787
+    - http://192.168.43.121:8787
+    - http://127.0.0.1:8787
 
 ## Coding
 
@@ -94,15 +102,17 @@ From the repository root the administrators can run
 lerna run publish
 ```
 
-![lerna run publish](assets/images/lerna-run-publish.png)
+Output
+
+    √ Images:publish (20s)
+    √ Random:publish (20s)
+    √ John:publish (22s)
 
 Administrators can also deploy a single Worker. `cd` to its directory and run
 
 ```shell
 wrangler publish
 ```
-
-![wrangler publish](assets/images/wrangler-publish.png)
 
 We use a GitHub Action to deploy on merge to main branch but each Worker deployment is separate.
 
