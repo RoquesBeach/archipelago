@@ -59,12 +59,7 @@ wrangler generate my-worker
 cd my-worker
 ```
 
-Since we are building all the Workers under one account and subdomain `roquesbeach.workers.dev` you must fill out your
-[wrangler.toml](packages/john/wrangler.toml) with
-
-```toml
-account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
-```
+We are building all the Workers under one account and subdomain `roquesbeach.workers.dev`.
 
 Then to test the Worker locally run
 
@@ -131,9 +126,10 @@ my-worker:
   steps:
     - uses: actions/checkout@v2
     - name: 🚀 Publish
-      uses: cloudflare/wrangler-action@1.3.0
+      uses: cloudflare/wrangler-action@2.0.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
+        accountId: ${{ secrets.CF_ACCOUNT_ID }}
         workingDirectory: "packages/my-worker"
 ```
 
