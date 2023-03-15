@@ -1,6 +1,4 @@
 name = "john"
-type = "webpack"
-account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
+compatibility_date = "2022-06-25"
+main = "./index.js"
 workers_dev = true
-route = ""
-zone_id = ""
