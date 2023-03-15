@@ -69,16 +69,17 @@ account_id = "9ce3889ba6eb93d1a68f191e1ac67c01"
 Then to test the Worker locally run
 
 ```shell
-wrangler dev
+wrangler dev --local
 ```
 
-You can Listening at
+Output
 
-    - http://0.0.0.0:8787
-    - http://172.18.160.1:8787
-    - http://192.168.56.1:8787
-    - http://192.168.43.121:8787
-    - http://127.0.0.1:8787
+```shell
+Debugger attached.
+Worker reloaded! (454.77KiB)
+Listening on ...
+... http://127.0.0.1:8787
+```
 
 ## Coding
 
@@ -104,9 +105,11 @@ lerna run publish
 
 Output
 
-    √ Images:publish (20s)
-    √ Random:publish (20s)
-    √ John:publish (22s)
+```shell
+√ Images:publish (20s)
+√ Random:publish (20s)
+√ John:publish (22s)
+```
 
 Administrators can also deploy a single Worker. `cd` to its directory and run
 
