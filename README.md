@@ -124,7 +124,7 @@ my-worker:
   runs-on: ubuntu-latest
   name: 🧘 my-worker
   steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: 🚀 Publish
       uses: cloudflare/wrangler-action@2.0.0
       with:
