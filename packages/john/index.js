@@ -6,7 +6,7 @@ const html = `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>John's Beach 🍇 😎 🤓 🚀 🚀 🚀</title>
     <!-- Facebook Meta Tags -->
-    <meta property="og:image" content="https://fuchsia.surf/assets/images/logos/fuchsia-307.png">
+    <meta property="og:image" content="https://slurpcode.github.io/slurp/assets/images/logos/fuchsia-307.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="360">
     <meta property="og:image:height" content="360">
