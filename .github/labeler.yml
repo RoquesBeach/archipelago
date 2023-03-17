@@ -1,0 +1,26 @@
+# Add 'repo' label to any root file changes
+repo:
+  - "*"
+# Add 'assets' label to any change to assets files
+assets:
+  - any: ["assets/**/*"]
+
+# Add 'doc' label to any change to doc files
+doc:
+  - any: ["doc/**/*"]
+
+# Add 'gcloud' label to any change to gcloud files
+gcloud:
+  - any: ["gcloud/**/*"]
+
+# Add 'lang' label to any change to lang files
+lang:
+  - any: ["lang/**/*"]
+
+# Add 'languages' label to any change to languages files
+languages:
+  - any: ["languages/**/*"]
+
+# Add 'packages' label to any change to packages files
+packages:
+  - any: ["packages/**/*"]
