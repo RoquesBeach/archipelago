@@ -6,7 +6,7 @@ assets:
   - any: ["assets/**/*"]
 
 # Add 'doc' label to any change to doc files
-doc:
+documentation:
   - any: ["doc/**/*"]
 
 # Add 'gcloud' label to any change to gcloud files
