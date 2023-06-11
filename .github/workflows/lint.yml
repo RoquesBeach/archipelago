@@ -20,7 +20,7 @@ jobs:
           - x64
         # an extra windows-x86 run:
         include:
-          - os: windows-2016
+          - os: windows-2019
             node_version: 14
             architecture: x86
     name: 🍶 Markdown Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
