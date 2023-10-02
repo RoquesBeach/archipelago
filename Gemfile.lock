@@ -17,7 +17,7 @@ GEM
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
-    chef-utils (18.0.161)
+    chef-utils (18.3.0)
       concurrent-ruby
     coderay (1.1.3)
     coercible (1.0.0)
@@ -237,7 +237,7 @@ GEM
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    mdl (0.12.0)
+    mdl (0.13.0)
       kramdown (~> 2.3)
       kramdown-parser-gfm (~> 1.1)
       mixlib-cli (~> 2.1, >= 2.1.1)
