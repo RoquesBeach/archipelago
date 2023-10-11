@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 🤓 😎 John
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🚀 Publish
         uses: cloudflare/wrangler-action@v3.3.0
         with:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 🖼️ 📷 Images
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🚀 Publish
         uses: cloudflare/wrangler-action@v3.3.0
         with:
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     name: ⚙️ 🍇 Random
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🚀 Publish
         uses: cloudflare/wrangler-action@v3.3.0
         with:
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 🪓️ 🦄 Python
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🚀 Publish
         uses: cloudflare/wrangler-action@v3.3.0
         with:

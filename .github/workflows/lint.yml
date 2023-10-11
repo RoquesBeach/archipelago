@@ -25,7 +25,7 @@ jobs:
             architecture: x86
     name: 🍶 Markdown Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -37,7 +37,7 @@ jobs:
     name: 🥂 Shell
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🧹 ShellCheck
         uses: ludeeus/action-shellcheck@master
   yamllint:
@@ -48,7 +48,7 @@ jobs:
         python-version: ['3.7', '3.8', '3.9', '3.10', 'pypy-3.7', 'pypy-3.8']
     name: 🍺 YAML Lint Python ${{ matrix.python-version }} on ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 🧹 YAML Lint
         uses: ibiqlik/action-yamllint@v3.1
   flake8:
@@ -59,7 +59,7 @@ jobs:
         python-version: ['3.7', '3.8', '3.9', '3.10', 'pypy-3.7', 'pypy-3.8']
     name: 🍷 Flake8 Python ${{ matrix.python-version }} on ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up Python environment
         uses: actions/setup-python@v4.7.0
         with:
@@ -76,7 +76,7 @@ jobs:
         ruby: ['3.2.1']
     name: ☕ Rubocop Ruby ${{ matrix.ruby }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
@@ -90,7 +90,7 @@ jobs:
         ruby: ['3.2.1']
     name: ☕ Markdownlint Ruby ${{ matrix.ruby }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
