@@ -32,7 +32,6 @@ updates:
     # Add assignees
     assignees:
       - "Andrew-Colman"
-      - "TJSteel"
 
   # Maintain dependencies for pip
   - package-ecosystem: "pip"
