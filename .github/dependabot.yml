@@ -29,9 +29,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    # Add assignees
-    assignees:
-      - "Andrew-Colman"
 
   # Maintain dependencies for pip
   - package-ecosystem: "pip"
